@@ -37,6 +37,6 @@ def __1__():
             time.sleep(3)
         except:
             pass
-    j = requests.get("http://" + target + "/wp-json-wp/users/")
+    j = requests.get("http://" + target + "/wp-json-wp/users/").text
     print(j)
 __1__()
