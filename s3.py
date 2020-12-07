@@ -19,7 +19,7 @@ def __1__():
             print(Fore.RED + "Ok Good Lunch ;)")
         except:
             pass
-    r = requests.get("http://" + target  "/wp-content/plugins/")
+    r = requests.get("http://" + target + "/wp-content/plugins/")
     if r.status_code == 404 or r.status_code == 500:
         try:
             print(Fore.YELLOW + "\n[!] - Your Target Is Not WordPress ;)")
