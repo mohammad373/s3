@@ -38,6 +38,5 @@ def __1__():
         except:
             pass
     j = requests.get("http://" + target + "/wp-json-wp/users/")
-    j1 = json.loads(j).text
-    print(j1)
+    print(j)
 __1__()
